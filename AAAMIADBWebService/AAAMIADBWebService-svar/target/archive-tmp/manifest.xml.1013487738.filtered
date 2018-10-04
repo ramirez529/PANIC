@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service_description xmlns="http://archiveschemas.aus.avaya.com/aus"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://archiveschemas.aus.avaya.com/aus aus.xsd"
+    name="AAAMIADBWEBSERVICE" version="1.0.0.0.0"
+    sdk_version="3.2" sdk_build="3.2.0.1.320111">
+	<component type="properties" filename="properties.xml" />
+	<component type="servlet" filename="AAAMIADBWebService-ear-1.0.0.0.0.ear" />
+</service_description>

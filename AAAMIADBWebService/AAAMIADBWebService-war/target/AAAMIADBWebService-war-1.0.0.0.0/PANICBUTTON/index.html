@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!--[if IE]><link rel="shortcut icon" href="img/favicon.ico"><![endif]-->
+  <link rel="apple-touch-icon-precomposed" href="img/favicon.ico">
+  <link rel="icon" href="img/favicon.ico">
+  <style>
+    body {
+  padding-top: 2.5rem;
+}
+button.close {
+    visibility: hidden;
+}
+  </style>
+  <title>Avaya Breeze Salud</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Avaya Breeze Salud</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-ajustes" data-backdrop="static" data-keyboard="false" >Ajustes</button>
+    </div>
+  </nav>
+
+  <main role="main">
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h3 class="display-4">Avaya Breeze Salud</h3>
+        <img src="img/button.png" class="img-fluid" alt="Click To Call" id="callbtn">
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal para los settings-->
+
+  <div class="modal fade" id="modal-ajustes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ajustes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="ajustes-frm" method="post">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Tel&eacute;fono</label>
+              <input type="tel" class="form-control" id="telefono" name="telefono" aria-describedby="emailHelp" placeholder="Ingresa tu tel&eacute;fono" required>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <input type="submit" class="btn btn-primary" value="Guardar" ></button>
+          </form>
+          <button type="button" class="btn btn-secondary" id="limpiar-btn">Limpiar Ajustes</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal -->
+  <!-- Modal para Informacion-->
+
+  <div class="modal fade" id="modal-informacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Informacion</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="mensaje-modal"></p>
+        </div>
+        <div class="modal-footer">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal -->
+
+  <!-- Modal para los errores-->
+  <div class="modal fade" id="modalerrores" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tituloerror">Error</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="mensajeerror">Mensaje de Error</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal -->
+
+
+
+
+  <footer class="container">
+    <p>&copy;Avaya 2018</p>
+  </footer>
+
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>
